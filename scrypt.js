@@ -1,53 +1,59 @@
-<script type="text/javascript">
-        ymaps.ready(init);
-        var myMap, 
-            myPlacemark;
+$(document).ready(() => {
+    $('#hamburger-menu').click(() => {
+        $('#hamburger-menu').toggleClass('active')
+        $('#nav-menu').toggleClass('active')
+    })
 
-        function init(){ 
-            myMap = new ymaps.Map("map", {
-                center: [43.225807, 76.807849],
-                zoom: 14
-        });
+    // setting owl carousel
 
-        myPlacemark = new ymaps.Placemark([43.225807,76.807849], { hintContent:'OUR OFFICE'
-            });
-            
-            myMap.geoObjects.add(myPlacemark);
+    let navText = ["<i class='bx bx-chevron-left'></i>", "<i class='bx bx-chevron-right'></i>"]
+
+    $('#hero-carousel').owlCarousel({
+        items: 1,
+        dots: false,
+        loop: true,
+        nav:true,
+        navText: navText,
+        autoplay: true,
+        autoplayHoverPause: true
+    })
+
+    $('#top-movies-slide').owlCarousel({
+        items: 2,
+        dots: false,
+        loop: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsive: {
+            500: {
+                items: 3
+            },
+            1280: {
+                items: 4
+            },
+            1600: {
+                items: 6
+            }
         }
-    </script>
+    })
 
-<script>
-  var slideIndex = 0;
-  showSlides(slideIndex);
+    $('.movies-slide').owlCarousel({
+        items: 2,
+        dots: false,
+        nav:true,
+        navText: navText,
+        margin: 15,
+        responsive: {
+            500: {
+                items: 2
+            },
+            1280: {
+                items: 4
+            },
+            1600: {
+                items: 6
+            }
+        }
+    })
+})
 
-  function plusSlides(n) {
-    showSlides(slideIndex += n-1);
-  }
-
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {
-      slideIndex = 0;
-    }    
-    if (n < 1) {
-      slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}   
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace("active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 50000);
-    }
-  </script> 
