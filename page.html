@@ -1,28 +1,398 @@
-<!DOCTYPE html>
-<html >
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <meta charset="utf-8">  
-  <meta name = "viewport" content="width=device-width, initial-scale = 1.0">        
-  <title>HOME PAGE</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=<your API key>&lang=en_US" type="text/javascript"></script>
-  </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitap</title>
+    <link rel="stylesheet" href="/font-awesome.min.css">
+    <link rel="stylesheet" href="aboutstyle.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <!-- BOX ICONS -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
   
-  <body>
-   <div id="container">
-    <div id="sticky" class="col-md-12">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header" style="width: 450px">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span> 
-            </button>
-            </body>
-          
-          </html>
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="#" class="logo">
+                    <i class="bx bx-book-open bx-tada main-color"></i>K<span class="main-color">i</span>tap
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="movies.html">Home</a></li>
+                    <li><a href="movies.html  #top_film">Genre</a></li>
+                    <!-- <li><a href="#">Movies</a></li> -->
+                    <li><a href="#">About</a></li>
+                    <li>
+                        <a href="#" class="btn btn-hover">
+                            <span>Sign in</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END NAV -->
+
+    <!--Home section start-->
+    <section class="home-section" id="home">
+        <div class="container">
+            <div class="row h-100 align-items-center align-content-center">
+                <div class="home-text">
+                    <h1>Get better with <a href="#" class="logo">
+                        <i class="bx bx-book-open bx-tada main-color"></i>K<span class="main-color">i</span>tap
+                    </a></h1>
+                    <h2> Kitap is the largest bookstore in Kazakhstan, which presents about 5,000 titles of
+                        books. Much attention in the assortment is paid to children's literature and educational
+                        games for children. The pride of the store is the department of gift and exclusive editions -
+                        unique books released in limited editions. The assortment also includes related products,
+                        including puzzles, postcards, bookmarks, cartographic publications, souvenirs.</h2>
+                    
+                </div>
+                <div class="home-img">
+                    <div class="home-img-inner">
+                        <div class="home-course">
+                        <div class="home-course-item">romans</div>
+                        <div class="home-course-item">kid&#39;s literature</div>
+                        <div class="home-course-item">detectives</div>
+                        <div class="home-course-item">dramas</div>
+                        </div>
+                        
+                        <img src="C:\Users\админ\OneDrive\Рабочий стол\Labs for web\final project\aboutimg\home-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Home section end-->
+
+    <!--why us section start-->
+    <section class="why-us-section sec-padding" id="why-us">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>why <span>us</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="why-us-item">
+                    <div class="icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>high quality</h3>
+                    <p>It is very important for us that you get pleasure from watching. For our loved viewers, we offer only high quality films, serials and shows.</p>
+                </div>
+                <div class="why-us-item">
+                    <div class="icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>affordable price</h3>
+                    <p>We have different and cool subscriptions with which you will get even more cool features&extensions so don't hesitate to buy a subscription!</p>
+                </div>
+                <div class="why-us-item">
+                    <div class="icon">
+                        <i class="fas fa-ad"></i>
+                    </div>
+                    <h3>convenience</h3>
+                    <p>Our customers
+                        are always
+                        waiting for
+                        pleasant
+                        surprises -
+                        promotions,
+                        discounts,
+                        sweepstakes!
+                         :) Enjoy your reading!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--why us section end -->
+
+    <!--courses section start-->
+    <section class="courses-section sec-padding" id="courses">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2><span>Our</span> staff</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="course-item">
+                    <a href="">
+                        <div class="course-img">
+                            <img src="https://old.newsroom.kz/media/2018/06/22/кана.jpg" height="238px" alt="">
+                            <div class="course-price">
+                                
+                            </div>
+                        </div>
+                        <div class="course-info">
+                            <ul>
+                                <li>CEO</li>
+                                
+                            </ul>
+                            <h3>Kanat Beisekeyev</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="course-item">
+                    <a href="">
+                        <div class="course-img">
+                            <img src="https://the-steppe.com/pictures/files/Kris/Kris4/bibissara.jpg" height="238px" alt="">
+                          
+                        </div>
+                        <div class="course-info">
+                            <ul>
+                                <li>Director of Nur-Sultan</li>
+                            
+                            </ul>
+                            <h3>Aliya Nugmanova</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="course-item">
+                    <a href="">
+                        <div class="course-img">
+                            <img src="C:\Users\админ\OneDrive\Рабочий стол\Labs for web\final project\aboutimg\Zhenis.png" height="238px" alt="">
+                        
+                        </div>
+                        <div class="course-info">
+                            <ul>
+                                <li>Director of Almaty</li>
+                           
+                            </ul>
+                            <h3>Zhenis Zholaman</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="course-item">
+                    <a href="">
+                        <div class="course-img">
+                            <img src="C:\Users\админ\OneDrive\Рабочий стол\Labs for web\final project\aboutimg\Karina.png" alt="">
+                
+                        </div>
+                        <div class="course-info">
+                            <ul>
+                                <li>Director of Shymkent</li>
+                         
+                            </ul>
+                            <h3>Karina Shayapova</h3>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--courses section end-->
+
+    <!--fun facts section start-->
+    <section class="fun-facts-section sec-padding">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>our <span>achievements</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="fun-facts-img">
+                    <img src="C:\Users\админ\OneDrive\Рабочий стол\Labs for web\final project\aboutimg\fun-facts-img.png" alt="">
+                </div>
+                <div class="fun-facts-items">
+                    <div class="row">
+                       <div class="fun-facts-item">
+                           <h3>3</h3>
+                           <p>city-stores</p>
+                       </div> 
+                       <div class="fun-facts-item">
+                        <h3>5000+</h3>
+                        <p>available books</p>
+                       </div>
+                       <div class="fun-facts-item">
+                        <h3>570</h3>
+                        <p>worldwide authors</p>
+                       </div>
+                       <div class="fun-facts-item">
+                        <h3>92%</h3>
+                        <p>satisfaction rate</p>
+                       </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--fun facts section end-->
+    
+
+    <!--review section start-->
+    <section class="reviews-section sec-padding" id="reviews">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>what our <span>readers</span> saying</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="review-item">
+                    <img src="C:\Users\админ\OneDrive\Рабочий стол\Labs for web\final project\aboutimg\Ayan.png" alt="">
+                    <p> <i class="fas fa-quote-left"></i>Online library is one of the newest thing we have to be able to use while we're away from home. Kitap has great quality service.<i class="fas fa-quote-right"></i></p>
+                    <h3>Ayan Otepbergen</h3>
+                    <span></span>
+                </div>
+                <div class="review-item">
+                    <img src="https://im0-tub-ru.yandex.net/i?id=34ae0171da8ceea96038588d4d5f8edb-l&ref=rim&n=13&w=1080&h=1080" alt="">
+                    <p><i class="fas fa-quote-left"></i> Kitap has the most variety of all genre for all ages, best recommended and Kitap only readings. no other streaming service can beat them. Kitap has a perfect user friendly service that even a three year old can use <i class="fas fa-quote-right"></i></p>
+                    <h3>Eliza Herman</h3>
+                    <span></span>
+                </div>
+                <div class="review-item">
+                    <img src="C:\Users\админ\OneDrive\Рабочий стол\Labs for web\final project\aboutimg\Vladimir.png" alt="">
+                    <p><i class="fas fa-quote-left"></i>Not sure problem I had other day was because of Kitap, Roku, or Fios, but I contacted Kitap and yet stayed with me in the online chat for almost an hour. She was very courteous and helpful<i class="fas fa-quote-right"></i></p>
+                    <h3>Vladimir Davidoff</h3>
+                    <span></span>
+                </div>
+                <div class="review-item">
+                    <img src="C:\Users\админ\OneDrive\Рабочий стол\Labs for web\final project\aboutimg\Raj.png" alt="">
+                    <p><i class="fas fa-quote-left"></i>Kitap is up on new bestsellers. Adding new ones everyday. They also show you what you might be interested in by what you prefer. A big variety of new romans and stories as well as old ones you might have forgotten. <i class="fas fa-quote-right"></i></p>
+                    <h3>raj himajal</h3>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--review section end-->
+
+
+    <!--contact start-->
+    <section class="contact-section sec-padding" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>contact <span>us</span> </h2>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11157.95138092152!2d76.67534428557522!3d43.21063339994604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38834f7675d8a6c3%3A0x7b7d14aec270c056!2sSDU!5e0!3m2!1sen!2skz!4v1639918426530!5m2!1sen!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="input-group">
+                           <input type="text" placeholder="Name" class="form-control" id=""> 
+                        </div>
+                        <div class="input-group">
+                            <input type="text" placeholder="E-mail" class="form-control" id=""> 
+                        </div>
+                        <div class="input-group">
+                            <input type="text" placeholder="Phone" class="form-control" id=""> 
+                        </div>
+                        <div class="input-group">
+                            <textarea placeholder="Message" class="form-control"></textarea> 
+                         </div>
+                         
+                            <a href="#" class="btn btn-hover">
+                                <span>Send</span>
+                            </a>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+     <!-- FOOTER SECTION -->
+     <footer class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-6 col-sm-12">
+                    <div class="content">
+                        <a href="#" class="logo">
+                            <i class="bx bx-book-open bx-tada main-color"></i>K<span class="main-color">i</span>tap
+                        </a>
+                        <p>
+                            The ultimate goal of the Kitap is to make all the published works of humankind available to everyone in the world. While large in scope and ambition, this goal is within our grasp. Achieving it will require the participation of librarians, authors, government officials and technologists.
+                        </p>
+                        <div class="social-list">
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Kitap</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Browse</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Help</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer end-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <!-- APP SCRIPT -->
+    <script src="app.js"></script>
+
+
+
+
+
+
+
+    
+</body>
+</html>
